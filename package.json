@@ -1,0 +1,14 @@
+{
+    "name": "Unisound-oral-SDK-document-project",
+    "version": "0.0.1",
+    "bin":{
+        "add-version": "internal/scripts/addVersion.js"
+    },
+    "dependencies" :{
+        "octonode":">=0.7.1"
+    },
+    "repository" :{
+        "type" : "git",
+        "url" : "https://github.com/unisound-edu-dev/OralEvalSDKDocPrj.git"
+    }
+}
