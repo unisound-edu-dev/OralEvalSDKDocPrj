@@ -81,7 +81,8 @@ var go = function(username, password, sdk){
             console.log('changes for new version is >');
             newVer.changes.forEach(function(c){
                 console.log(c.msg)
-            })
+            });
+            process.exit(0);
         });
     })
 };
@@ -94,12 +95,7 @@ if(process.env['uname']){
             rl.question('which sdk[android/iOS/flash]', function(sdk){
                 go(uname || process.env['uname'], pwd || process.env['pwd'], sdk || process.env['sdk']);
                 rl.close();
-            })
+            });
         });
     });
 }
-
-
-
-
-
