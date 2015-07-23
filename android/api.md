@@ -76,7 +76,16 @@
 | ----- | ----- |
 | 说明|指定评测文本，构建一个默认参数对象。默认ServiceType为A，VadEnable为false，ConnectTimeout为100，useOfflineWhenFailedToConnectToServer为false，AudioStream为null|
 |版本支持| 最低2.0.0 |
-|参数 oralText|要评测的文本|
+|参数 oralText|要评测的文本。文本的具体要求请参考[评测输入输出说明](评测输入输出说明.md)|
+
+<br/>
+* public void setUid(String uid)
+| | |
+| ----- | ----- |
+| 说明|指定用户标识。我们的后台提供针对每个用户的统计和学习报告功能，需要根据用户标识获取学习报告|
+|版本支持| 最低2.0.0 |
+|参数 uid|用户标识，如用户名等可以唯一识别用户的字符串|
+
 
 <br/>
 * public void setVadEnable(boolean vadEnable)
@@ -121,7 +130,7 @@
 | ----- | ----- |
 | 说明|设置评测文本|
 |版本支持| 最低2.0.0 |
-|参数 oralText|需要评测的音频对应的文本|
+|参数 oralText|需要评测的音频对应的文本。文本的具体要求请参考[评测输入输出说明](评测输入输出说明.md)|
 
 <br/>
 * public void setServiceType(String serviceType)
