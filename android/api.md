@@ -19,7 +19,7 @@
 |  |  |
 | ----- | ----- |
 | 说明 | 获得当前SDK版本号 |
-| 版本支持 | 最低2.0.0 |
+| 版本支持 | 最低2.0.0 | 
 
 <br/>
 * public static void initServerAndPort(String server, int port)
