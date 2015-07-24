@@ -1,7 +1,11 @@
 var github = require('octonode');
-var https = require('https');
+
 var commit= require('./commit.js');
 var version = require('./version.js');
+var mycommon = require('./common.js');
+
+var getGitContent = mycommon.getGitContent;
+var getContent = mycommon.getContent;
 
 var findFirstVersion = version.findFirstVersion;
 version = version.version;
@@ -13,30 +17,6 @@ var rl = require('readline').createInterface({
     input: process.stdin,
     output: process.stdout
 });
-
-var getContent = function(url, cb){
-    var texts = '';
-    https.get(url, function(rsp) {
-        rsp.setEncoding('utf8');
-        rsp.on('data', function(txt){
-            texts += txt;
-        });
-        rsp.on('end', function(){
-            cb(texts);
-        });
-        rsp.on('error', function(err){
-            throw new Error('getting ' + url + err);
-        })
-    });
-}
-
-var getGitContent = function(ghrepo, path, cb){
-    ghrepo.contents(path, function(err, b, h){
-        if(err) throw(new Error('get contents "' + path + '":' + err));
-        if (!b || !b.download_url) throw new Error('can not download "' + path + '"');
-        getContent(b.download_url, cb);
-    });
-}
 
 var go = function(username, password, sdk){
     var client = github.client({
@@ -64,6 +44,7 @@ var go = function(username, password, sdk){
     })
 };
 
+
 if(process.env['uname']){
     go(process.env['uname'], process.env['pwd'],process.env['sdk']);
 }else{
@@ -76,3 +57,6 @@ if(process.env['uname']){
         });
     });
 }
+
+//exports.getUrlContent = getContent;
+exports.getGitContent = getGitContent;

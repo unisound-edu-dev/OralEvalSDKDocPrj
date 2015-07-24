@@ -2,7 +2,8 @@
     "name": "Unisound-oral-SDK-document-project",
     "version": "0.0.1",
     "bin":{
-        "add-version": "internal/scripts/addVersion.js"
+        "uns-doc-add-version": "internal/scripts/addVersion.js",
+        "uns-doc-check-commit":"internal/scripts/checkCommit.js"
     },
     "dependencies" :{
         "octonode":">=0.7.1"

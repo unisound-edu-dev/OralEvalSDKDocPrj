@@ -21,8 +21,8 @@ var version = function(vers, commits){
     }
     this.md = function(){
         var ret = '\n## v'+self.str() + '\n';
-        ret += '* status:![beta](/internal/imgs/beta.png)\n'
-        ret += '* head:' + self.changes[self.changes.length - 1].hash + '\n';
+        ret += '* status: beta ![beta](/internal/imgs/beta.png)\n'
+        ret += '* head: ' + self.changes[self.changes.length - 1].hash + '\n';
         ret += '* changes:\n'
         self.changes.forEach(function(c){
             ret += '\t* ' + c.msg + '\n';
