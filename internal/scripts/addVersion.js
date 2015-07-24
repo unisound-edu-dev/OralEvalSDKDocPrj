@@ -54,10 +54,11 @@ var go = function(username, password, sdk){
             var newVer = getNewVersion(commitTexts, lastVer, sdk);
             if(!newVer ) throw new Error('no new commits from version ' + lastVer.str());
             console.log('new version is > ' + newVer.str())
-            console.log('changes for new version is >');
-            newVer.changes.forEach(function(c){
-                console.log(c.msg)
-            });
+            console.log('new version markdown:');
+            //newVer.changes.forEach(function(c){
+            //    console.log(c.msg)
+            //});
+            console.log(newVer.md());
             process.exit(0);
         });
     })
