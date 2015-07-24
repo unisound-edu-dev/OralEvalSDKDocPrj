@@ -3,7 +3,7 @@ var getGitContent = require('./common.js').getGitContent;
 var unsCommit= require('./commit.js');
 
 
-var githubToken = "f4ece78748f14faeb0b6390174b6769110fe3075";
+var githubToken = "209222b44e2fd62d94248e0893abdd6544dcdffd";
 
 process.stdin.on('readable', function() {
     var chunk = process.stdin.read();
@@ -24,7 +24,8 @@ process.stdin.on('readable', function() {
                     return;
                 }
             }
-            throw new Error('can not find commit ' + newRev);
+            process.stdout.write('can not find commit ' + newRev);
+            process.stdout.write('\nplease update document before push--https://github.com/unisound-edu-dev/OralEvalSDKDocPrj/blob/master/internal/commits');
         });
     }
 });
