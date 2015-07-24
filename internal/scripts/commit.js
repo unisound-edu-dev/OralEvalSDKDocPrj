@@ -10,4 +10,27 @@ var commitInfo = function(rslt){
     this.msg = rslt[9];
 }
 
+var getNewVersion = function(commits, lastVer, s){
+    var commitLines = commits.split('\n');
+    var newCommits = [];
+    var ver = new version([0,0,0]);
+    var reg = /^([a-f0-9]{40})[ \t]+([^ \t]+)[ \t]+([0-9]+)\.([0-9]+)\.([0-9]+)[ \t]+([yn])[ \t]+([yn])[ \t]+([yn])[ \t]+(.*)/;
+    commitLines.forEach(function(l){
+        var rslt = reg.exec(l);
+        if(rslt && rslt[2] == s){
+            var info = new commitInfo(rslt);
+            ver = ver.add(info.ver);
+            if(ver.gte(lastVer)){
+                newCommits.push(info);
+            }
+        }
+    });
+    if(newCommits.length > 0){
+        ver.changes = newCommits;
+        return ver;
+    }
+    return null;
+}
+
 exports.commit = commitInfo;
+exports.getNewVersion = getNewVersion;

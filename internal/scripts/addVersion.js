@@ -1,7 +1,13 @@
 var github = require('octonode');
 var https = require('https');
-var commitInfo = require('./commit.js').commit;
-var version = require('./version.js').version;
+var commit= require('./commit.js');
+var version = require('./version.js');
+
+var findFirstVersion = version.findFirstVersion;
+version = version.version;
+
+var getNewVersion = commit.getNewVersion;
+var commit = commit.commit;
 
 var rl = require('readline').createInterface({
     input: process.stdin,
@@ -30,36 +36,6 @@ var getGitContent = function(ghrepo, path, cb){
         if (!b || !b.download_url) throw new Error('can not download "' + path + '"');
         getContent(b.download_url, cb);
     });
-}
-
-var findFirstVersion = function(text){
-    var rst = /## v([0-9]+)\.([0-9]+)\.([0-9]+)/g.exec(text);
-    if(rst && rst[1] && rst[2] && rst[3]){
-        return new version([rst[1] * 1, rst[2] * 1, rst[3] * 1]);
-    }
-    return null;
-}
-
-var getNewVersion = function(commits, lastVer, s){
-    var commitLines = commits.split('\n');
-    var newCommits = [];
-    var ver = new version([0,0,0]);
-    var reg = /^([a-f0-9]{40})[ \t]+([^ \t]+)[ \t]+([0-9]+)\.([0-9]+)\.([0-9]+)[ \t]+([yn])[ \t]+([yn])[ \t]+([yn])[ \t]+(.*)/;
-    commitLines.forEach(function(l){
-        var rslt = reg.exec(l);
-        if(rslt && rslt[2] == s){
-            var info = new commitInfo(rslt);
-            ver = ver.add(info.ver);
-            if(ver.gte(lastVer)){
-                newCommits.push(info);
-            }
-        }
-    });
-    if(newCommits.length > 0){
-        ver.changes = newCommits;
-        return ver;
-    }
-    return null;
 }
 
 var go = function(username, password, sdk){

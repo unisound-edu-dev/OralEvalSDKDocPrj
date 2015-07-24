@@ -21,4 +21,13 @@ var version = function(vers, commits){
     }
 }
 
+var findFirstVersion = function(text) {
+    var rst = /## v([0-9]+)\.([0-9]+)\.([0-9]+)/g.exec(text);
+    if (rst && rst[1] && rst[2] && rst[3]) {
+        return new version([rst[1] * 1, rst[2] * 1, rst[3] * 1]);
+    }
+    return null;
+}
+
+exports.findFirstVersion = findFirstVersion;
 exports.version = version;
