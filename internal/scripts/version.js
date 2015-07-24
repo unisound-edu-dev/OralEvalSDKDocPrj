@@ -23,10 +23,25 @@ var version = function(vers, commits){
         var ret = '\n## v'+self.str() + '\n';
         ret += '* status: beta ![beta](/internal/imgs/beta.png)\n'
         ret += '* head: ' + self.changes[self.changes.length - 1].hash + '\n';
-        ret += '* changes:\n'
-        self.changes.forEach(function(c){
-            ret += '\t* ' + c.msg + '\n';
+        var bugfix = self.changes.filter(function(c){
+            return c.bug;
         });
+        var feature = self.changes.filter(function(c){
+            return c.feature;
+        });
+        if(bugfix.length > 0) {
+            ret += '* bugfix:\n'
+            bugfix.forEach(function(c){
+                ret += '\t* ' + c.msg + '\n';
+            });
+        }
+        if(feature.length > 0) {
+            ret += '* features:\n'
+            feature.forEach(function(c){
+                ret += '\t* ' + c.msg + '\n';
+            });
+        }
+
         return ret;
     }
 }
