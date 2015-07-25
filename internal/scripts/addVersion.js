@@ -19,10 +19,7 @@ var rl = require('readline').createInterface({
 });
 
 var go = function(username, password, sdk){
-    var client = github.client({
-        username: username,
-        password: password
-    });
+    var client = github.client();
 
     var ghrepo = client.repo('unisound-edu-dev/OralEvalSDKDocPrj');
     getGitContent(ghrepo, 'internal/commits', function(commitTexts){
