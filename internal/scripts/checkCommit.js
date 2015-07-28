@@ -25,7 +25,6 @@ process.stdin.on('readable', function() {
                     process.stdout.write('find commit ' + commits[i].str() + '\n');
                     if (commits[i].api) {
                         ghrepo.commits({path: commits[i].sdk + '/api.md'}, function (err, b, h) {
-                            console.log('githubcommits:' + b);
                             if (!b) {
                                 process.stdout.write('can not get commits of ' + commits[i].sdk + '/api.md\n');
                                 process.exit(3);
