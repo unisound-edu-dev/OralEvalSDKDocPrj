@@ -1,3 +1,4 @@
+#!/usr/bin/node
 var github = require('octonode');
 var getGitContent = require('./common.js').getGitContent;
 var unsCommit= require('./commit.js');

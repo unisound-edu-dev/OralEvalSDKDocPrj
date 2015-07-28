@@ -1,3 +1,4 @@
+#!/usr/bin/node
 var github = require('octonode');
 
 var commit= require('./commit.js');
