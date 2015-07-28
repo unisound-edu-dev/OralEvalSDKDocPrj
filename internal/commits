@@ -1,3 +1,2 @@
 commit                                   sdk        ver    bugfix feature api   comment
 77a8a472e6cce568abb443f12a8cf548a76cb7a5 android    2.0.0  n      n       n     初始化版本号为2.0.0
-fad7305bfbebae5da57c4aa809785b6ce7400abe android    0.0.1  y      n       n     解决小米1s机型不能评测的问题；解决一些网络环境下出现oom的问题
