@@ -19,6 +19,9 @@ var version = function(vers, commits){
     this.gte = function(ver){
         return (self.v1 == ver.v1 && self.v2==ver.v2 && self.v3==ver.v3) || self.v1 > ver.v1 || self.v2 > ver.v2 || self.v3 > ver.v3;
     }
+    this.gt = function(ver){
+        return self.v1 > ver.v1 || self.v2 > ver.v2 || self.v3 > ver.v3;
+    }
     this.md = function(){
         var ret = '\n## v'+self.str() + '\n';
         ret += '* status: beta ![beta](/internal/imgs/beta.png)\n'

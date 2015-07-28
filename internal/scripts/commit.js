@@ -39,7 +39,7 @@ var getNewVersion = function(commits, lastVer, s){
         if(rslt && rslt[2] == s){
             var info = new commitInfo(rslt);
             ver = ver.add(info.ver);
-            if(ver.gte(lastVer)){
+            if(ver.gt(lastVer)){
                 newCommits.push(info);
             }
         }

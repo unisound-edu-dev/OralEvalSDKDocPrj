@@ -43,7 +43,8 @@ var go = function(username, password, sdk){
 };
 
 
-if(process.env['uname']){
+go("","",process.argv[2]);
+/*if(process.env['uname']){
     go(process.env['uname'], process.env['pwd'],process.env['sdk']);
 }else{
     rl.question('github username:', function(uname){
@@ -55,6 +56,7 @@ if(process.env['uname']){
         });
     });
 }
+*/
 
 //exports.getUrlContent = getContent;
 exports.getGitContent = getGitContent;
