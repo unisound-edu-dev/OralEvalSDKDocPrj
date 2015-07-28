@@ -1,4 +1,2 @@
 commit                                   sdk        ver    bugfix feature api   comment
-fad7305bfbebae5da57c4aa809785b6ce7400abe android    0.0.1  y      n       n     解决小米1s机型不能评测的问题；解决一些网络环境下出现oom的问题
-d77ba24ea1d646d5f56a132fc631835023e98ec2 iOS        0.1.0  n      y       y     增加本地mp3录音输出功能
-f87e3474e6f45ed78745fe9f10ad50c4965abfe2 android    0.1.0  n      y       y     增加本地mp3录音输出功能
+75d264c1376697894df6d697ab4ba95631bfe8d5 android    2.0.0  n      n       n     初始化版本号为2.0.0
