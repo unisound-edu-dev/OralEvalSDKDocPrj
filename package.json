@@ -3,7 +3,8 @@
     "version": "0.0.1",
     "bin":{
         "uns-doc-add-version": "internal/scripts/addVersion.js",
-        "uns-doc-check-commit":"internal/scripts/checkCommit.js"
+        "uns-doc-check-commit":"internal/scripts/checkCommit.js",
+        "uns-doc-current-version":"internal/scripts/currentVersion.js"
     },
     "dependencies" :{
         "octonode":">=0.7.1"
