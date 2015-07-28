@@ -79,13 +79,14 @@
 |参数 oralText|要评测的文本。文本的具体要求请参考[评测输入输出说明](评测输入输出说明.md)|
 
 <br/>
+
 * public void setUid(String uid)
+
 | | |
 | ----- | ----- |
 | 说明|指定用户标识。我们的后台提供针对每个用户的统计和学习报告功能，需要根据用户标识获取学习报告|
 |版本支持| 最低2.0.0 |
 |参数 uid|用户标识，如用户名等可以唯一识别用户的字符串|
-
 
 <br/>
 * public void setVadEnable(boolean vadEnable)
