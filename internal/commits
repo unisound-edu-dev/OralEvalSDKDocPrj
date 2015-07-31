@@ -1,3 +1,4 @@
 commit                                   sdk        ver    bugfix feature api   comment
 77a8a472e6cce568abb443f12a8cf548a76cb7a5 android    2.0.0  n      n       n     初始化版本号为2.0.0
 4d5b0baabfc867859115a6a6c4e41a68e89fdabc android    0.0.1  y      n       n     当一个域名无法解析时，不影响用其他域名评测
+07d4ee99983948d9eca8ccf9391f818ed5ea0aac android    0.1.0  n      y       n     将eval.hivoice.cn主域名和全国各地机房固定IP内置到SDK中，以作服务备份
