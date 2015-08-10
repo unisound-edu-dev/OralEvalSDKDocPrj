@@ -3,3 +3,4 @@ commit                                   sdk        ver    bugfix feature api   
 4d5b0baabfc867859115a6a6c4e41a68e89fdabc android    0.0.1  y      n       n     当一个域名无法解析时，不影响用其他域名评测
 07d4ee99983948d9eca8ccf9391f818ed5ea0aac android    0.1.0  n      y       n     将eval.hivoice.cn主域名和全国各地机房固定IP内置到SDK中，以作服务备份
 f5c7f5b23966e396bf9dae964715fce72d0ea3bf android    0.0.1  y      n       n     当备份IP都不能访问时，下次连接从主域名开发重新尝试
+7f108a5585db1910fcb5e0bb085eff793f1ba75c android    0.1.0  n      y       n     去掉特定用户打分调整功能
