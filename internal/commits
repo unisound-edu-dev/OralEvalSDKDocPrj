@@ -4,3 +4,4 @@ commit                                   sdk        ver    bugfix feature api   
 07d4ee99983948d9eca8ccf9391f818ed5ea0aac android    0.1.0  n      y       n     将eval.hivoice.cn主域名和全国各地机房固定IP内置到SDK中，以作服务备份
 f5c7f5b23966e396bf9dae964715fce72d0ea3bf android    0.0.1  y      n       n     当备份IP都不能访问时，下次连接从主域名开发重新尝试
 7f108a5585db1910fcb5e0bb085eff793f1ba75c android    0.1.0  n      y       n     去掉特定用户打分调整功能
+6b99f155c1fadc5b9d8dabd097d40444f3e55b08 android    0.1.0  n      y       n     支持分数松紧参数设置
