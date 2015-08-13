@@ -1,5 +1,5 @@
 ## v2.3.2
-* status: beta ![beta](/internal/imgs/beta.png)
+* status: beta ![released](/internal/imgs/ok.png)
 * head: 6b99f155c1fadc5b9d8dabd097d40444f3e55b08
 * bugfix:
 	* 当一个域名无法解析时，不影响用其他域名评测
