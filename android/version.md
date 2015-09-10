@@ -1,3 +1,12 @@
+## v2.5.3
+* status: beta ![beta](/internal/imgs/beta.png)
+* head: 699bf9cfd380c96a34e500dc6ea2150cf4f8a20d
+* bugfix:
+	* 网络劫持捕获向上层报error
+* features:
+	* 上海机房IP调整
+	* 增加调整得分系数的接口
+
 ## v2.3.2
 * status: released ![released](/internal/imgs/ok.png)
 * head: 6b99f155c1fadc5b9d8dabd097d40444f3e55b08
