@@ -6,4 +6,5 @@ f5c7f5b23966e396bf9dae964715fce72d0ea3bf android    0.0.1  y      n       n     
 7f108a5585db1910fcb5e0bb085eff793f1ba75c android    0.1.0  n      y       n     去掉特定用户打分调整功能
 6b99f155c1fadc5b9d8dabd097d40444f3e55b08 android    0.1.0  n      y       n     支持分数松紧参数设置
 4d003a6b72bfe558eba2e3665a3acb2e16a284b2 android    0.0.1  n      y       n     上海机房IP调整
-671ff2681fe4d4b31d138331802e89492a3ddef0 android    0.1.0  y      n       n     网络劫持捕获向上层报error   
+671ff2681fe4d4b31d138331802e89492a3ddef0 android    0.1.0  y      n       n     网络劫持捕获向上层报error
+699bf9cfd380c96a34e500dc6ea2150cf4f8a20d android    0.1.0  n      y       y     增加调整得分系数的接口
