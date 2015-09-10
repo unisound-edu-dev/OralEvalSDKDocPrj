@@ -134,6 +134,15 @@
 |参数 oralText|需要评测的音频对应的文本。文本的具体要求请参考[评测输入输出说明](评测输入输出说明.md)|
 
 <br/>
+* public void setScoreAdjuest(float scoreAdjuest)
+
+| | |
+| ----- | ----- |
+| 说明|调整评分严厉程度，比如对于鼓励为主的应用可以适当提升评测得分|
+|版本支持| 最低2.4.3 |
+|参数 scoreAdjuest|得分系数。具体值请咨询客户经理|
+
+<br/>
 * public void setServiceType(String serviceType)
 
 | | |
