@@ -9,3 +9,4 @@ f5c7f5b23966e396bf9dae964715fce72d0ea3bf android    0.0.1  y      n       n     
 671ff2681fe4d4b31d138331802e89492a3ddef0 android    0.1.0  y      n       n     网络劫持捕获向上层报error
 699bf9cfd380c96a34e500dc6ea2150cf4f8a20d android    0.1.0  n      y       y     增加调整得分系数的接口
 7860c3ca7f1f444f6cd686db6679899ca07cdd73 android    0.0.1  n      y       n     为了能控制网络超时时间，改为异步解析域名
+66e7ce9841bf7c72c7fca348d27abf95d238059a android    0.0.1  y      n       n     读取结果时，socket超时参数不能发挥作用
