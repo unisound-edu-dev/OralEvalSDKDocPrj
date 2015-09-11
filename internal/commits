@@ -8,3 +8,4 @@ f5c7f5b23966e396bf9dae964715fce72d0ea3bf android    0.0.1  y      n       n     
 4d003a6b72bfe558eba2e3665a3acb2e16a284b2 android    0.0.1  n      y       n     上海机房IP调整
 671ff2681fe4d4b31d138331802e89492a3ddef0 android    0.1.0  y      n       n     网络劫持捕获向上层报error
 699bf9cfd380c96a34e500dc6ea2150cf4f8a20d android    0.1.0  n      y       y     增加调整得分系数的接口
+7860c3ca7f1f444f6cd686db6679899ca07cdd73 android    0.0.1  n      y       n     为了能控制网络超时时间，改为异步解析域名
