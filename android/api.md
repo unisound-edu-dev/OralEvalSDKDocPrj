@@ -179,6 +179,15 @@
 |参数 mp3Audio|true，则以mp3格式输出， 否则以16k，16bit有符号整数，单声道pcm格式输出|
 
 <br/>
+* public void setBufferLog(boolean bufferLog)
+
+| | |
+| ----- | ----- |
+| 说明|设置是否保存评测SDK内部Log，以便需要时取出。参考[IOralEvalSDK](#ioralevalsdk).getLog()|
+|版本支持| 最低2.6.5 |
+|参数 bufferLog|true，内部保存Log；否则，内部不保存Log|
+
+<br/>
 ### <a name="ioralevalsdk"></a> IOralEvalSDK
 
 <br/>
@@ -191,6 +200,16 @@
 | ----- | ----- |
 | 说明| 停止评测，将会在[IOralEvalSDK.ICallback](#ioralevalsdkicallback).onStop()回调中得到结果，或者[IOralEvalSDK.ICallback](#ioralevalsdkicallback).onError()中捕获错误|
 |版本支持| 最低2.0.0 |
+
+<br/>
+* public String getLog()
+
+| | |
+| ----- | ----- |
+| 说明| 获得该次评测的Log字符串。当遇到问题是，该字符串可以帮助Unisound分析错误原因。|
+| 注意事项 | 评测参数中需要指明打开Log功能。[OralEvalSDKFactory.StartConfig](#oralevalsdkfactorystartconfig).setBufferLog(true)。调用该函数取出Log后，内部Log将会清空，即取出的内容每次都是最新且不重叠的，如果开始评测后没有调用过该函数，那么Log会从评测开始之时，一直保存到评测结束|
+|返回值|从上次取出Log后开始，到目前为止，该次评测内部的Log|
+|版本支持| 最低2.6.5 |
 
 <br/>
 #### <a name="ioralevalsdkofflinesdkpreparationerror"></a> IOralEvalSDK.OfflineSDKPreparationError
