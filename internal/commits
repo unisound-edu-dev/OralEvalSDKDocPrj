@@ -11,3 +11,4 @@ f5c7f5b23966e396bf9dae964715fce72d0ea3bf android    0.0.1  y      n       n     
 7860c3ca7f1f444f6cd686db6679899ca07cdd73 android    0.0.1  n      y       n     为了能控制网络超时时间，改为异步解析域名
 2b9fe2bc8eaa82613c0f50934fd72be4a46aa8aa android    0.0.1  y      n       n     读取结果时，socket超时参数不能发挥作用
 537bdcabd23ce475c9f5964c2e96234eb3f60dc7 android    0.1.0  n      y       y     增加log读取接口，允许SDK调用者以字符串方式获取SDK的Log
+36483139dd2c47dae5e30fc5e98ee8c68c1c4c4d android    0.0.1  y      n       n     生词错误时应该要返回unknown_word错误枚举，而不是server错误枚举
