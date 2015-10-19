@@ -3,9 +3,9 @@
 * [OralEvalSDKFactory](#oralevalsdkfactory)
     * [OralEvalSDKFactory.StartConfig](#oralevalsdkfactorystartconfig)
 * [IOralEvalSDK](#ioralevalsdk)
-	* [IOralEvalSDK.OfflineSDKPreparationError](#ioralevalsdkofflinesdkpreparationerror)
- 	* [IOralEvalSDK.Error](#ioralevalsdkerror)
+	* [IOralEvalSDK.OfflineSDKError](#ioralevalsdkofflinesdkpreparationerror)
  	* [IOralEvalSDK.ICallback](#ioralevalsdkicallback)
+ * [SDKError](#ioralevalsdkerror)
 
 <br/>
 ### <a name="oralevalsdkfactory"></a>OralEvalSDKFactory
@@ -33,7 +33,7 @@
 |参数 port|服务的tcp端口|
 
 <br/>
-* public static [OfflineSDKPreparationError](#ioralevalsdkofflinesdkpreparationerror) initOfflineSDK(Context context, String workingDir)
+* public static [OfflineSDKError](#ioralevalsdkofflinesdkpreparationerror) initOfflineSDK(Context context, String workingDir)
 
 | | |
 | ----- | ----- |
@@ -41,7 +41,7 @@
 |版本支持| 最低2.0.0 |
 |参数 context| android.content.Context实例，比如一个Activity|
 |参数 workingDir|离线引擎模型的解压的位置|
-|返回值|初始化正确返回NOERROR；其他错误参考[OfflineSDKPreparationError](#ioralevalsdkofflinesdkpreparationerror)的说明|
+|返回值|初始化正确返回NOERROR；其他错误参考[OfflineSDKError](#ioralevalsdkofflinesdkpreparationerror)的说明|
 
 <br/>
 * public static void cleanupOfflineSDK(Context context)
@@ -237,7 +237,7 @@
 |TIMEOUT|超时|最低3.0.0
 
 <br/>
-#### <a name="ioralevalsdkerror"></a> IOralEvalSDK.Error
+#### <a name="ioralevalsdkerror"></a> SDKError
 <br/>
 
 在线SDK错误类型
