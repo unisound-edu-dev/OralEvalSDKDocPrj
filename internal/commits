@@ -1,2 +1,2 @@
 commit                                   sdk        ver    bugfix feature api   comment
-4ffd3f1368fbf06e703d606218d105670447ce4b android    3.0.0  n      y       y     重构到3.0.0版本，增加HTTP评测方式作为备份
+a63c46a1030fec4c7de058740c5662a07dd7ca21 android    3.0.0  n      y       y     重构到3.0.0版本，增加HTTP评测方式作为备份
