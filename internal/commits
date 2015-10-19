@@ -1,3 +1,4 @@
 commit                                   sdk        ver    bugfix feature api   comment
 a63c46a1030fec4c7de058740c5662a07dd7ca21 android    3.0.0  n      y       y     重构到3.0.0版本，增加HTTP评测方式作为备份
 e618144cf1496182b999052d4735401b9b84557b android    0.0.1  y      n       n     http评测时使用随机ip
+36006553c8ca6dbd83b16a0ecb22244232025f93 android    0.0.1  y      n       n     java层分配的空间不够导致jni中crash
