@@ -1,14 +1,2 @@
 commit                                   sdk        ver    bugfix feature api   comment
-77a8a472e6cce568abb443f12a8cf548a76cb7a5 android    2.0.0  n      n       n     初始化版本号为2.0.0
-4d5b0baabfc867859115a6a6c4e41a68e89fdabc android    0.0.1  y      n       n     当一个域名无法解析时，不影响用其他域名评测
-07d4ee99983948d9eca8ccf9391f818ed5ea0aac android    0.1.0  n      y       n     将eval.hivoice.cn主域名和全国各地机房固定IP内置到SDK中，以作服务备份
-f5c7f5b23966e396bf9dae964715fce72d0ea3bf android    0.0.1  y      n       n     当备份IP都不能访问时，下次连接从主域名开发重新尝试
-7f108a5585db1910fcb5e0bb085eff793f1ba75c android    0.1.0  n      y       n     去掉特定用户打分调整功能
-6b99f155c1fadc5b9d8dabd097d40444f3e55b08 android    0.1.0  n      y       n     支持分数松紧参数设置
-4d003a6b72bfe558eba2e3665a3acb2e16a284b2 android    0.0.1  n      y       n     上海机房IP调整
-671ff2681fe4d4b31d138331802e89492a3ddef0 android    0.1.0  y      n       n     网络劫持捕获向上层报error
-699bf9cfd380c96a34e500dc6ea2150cf4f8a20d android    0.1.0  n      y       y     增加调整得分系数的接口
-7860c3ca7f1f444f6cd686db6679899ca07cdd73 android    0.0.1  n      y       n     为了能控制网络超时时间，改为异步解析域名
-2b9fe2bc8eaa82613c0f50934fd72be4a46aa8aa android    0.0.1  y      n       n     读取结果时，socket超时参数不能发挥作用
-537bdcabd23ce475c9f5964c2e96234eb3f60dc7 android    0.1.0  n      y       y     增加log读取接口，允许SDK调用者以字符串方式获取SDK的Log
-36483139dd2c47dae5e30fc5e98ee8c68c1c4c4d android    0.0.1  y      n       n     生词错误时应该要返回unknown_word错误枚举，而不是server错误枚举
+4ffd3f1368fbf06e703d606218d105670447ce4b android    3.0.0  n      y       y     重构到3.0.0版本，增加HTTP评测方式作为备份
