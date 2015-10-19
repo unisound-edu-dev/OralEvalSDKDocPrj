@@ -102,8 +102,8 @@
 
 | | |
 | ----- | ----- |
-| 说明|设置最长前置静音时间。即如果评测开始后的vadBeforeMs毫秒内没有检测到说话，就自动结束。对应[ICallback](#ioralevalsdkicallback)中的onStop()方法中的stopType为2|
-|版本支持| 最低2.0.0 |
+| 说明|设置最长前置静音时间。即如果评测开始后的vadBeforeMs毫秒内没有检测到说话，就自动结束。对应[ICallback](#ioralevalsdkicallback)中的onStop()方法中的EndReason为NoVoice|
+|版本支持| 最低2.0.0， 3.0.0之后的版本将停止类型从int改为枚举 |
 |参数 vadBeforeMs|最长前置静音时间，默认2000(毫秒)|
 
 <br/>
@@ -111,8 +111,8 @@
 
 | | |
 | ----- | ----- |
-| 说明|设置最长后置静音时间。即如果检测到说话后，在vadAfterMs毫秒内一直没有检测到说话，就自动结束。对应[ICallback](#ioralevalsdkicallback)中的onStop()方法中的stopType为1|
-|版本支持| 最低2.0.0 |
+| 说明|设置最长后置静音时间。即如果检测到说话后，在vadAfterMs毫秒内一直没有检测到说话，就自动结束。对应[ICallback](#ioralevalsdkicallback)中的onStop()方法中的EndVoice为VoiceEnd|
+|版本支持| 最低2.0.0， 3.0.0之后的版本将停止类型从int改为枚举 |
 |参数 vadAfterMs|最长后置静音时间，默认2000(毫秒)。此参数最大值支持3000毫秒，大于3000毫秒内部按照3000毫秒处理|
 
 <br/>
@@ -212,7 +212,7 @@
 |版本支持| 最低2.6.5 |
 
 <br/>
-#### <a name="ioralevalsdkofflinesdkpreparationerror"></a> IOralEvalSDK.OfflineSDKPreparationError
+#### <a name="ioralevalsdkofflinesdkpreparationerror"></a> IOralEvalSDK.OfflineSDKError
 <br/>
 
 离线SDK错误类型
@@ -234,6 +234,7 @@
 |TEXT_EMPTY |空文本 |最低2.0.0
 |EXPIR | 离线引擎已经过期 |最低2.0.0
 |UNKNOWN |未知错误。遇到次错误联系云知声 |最低2.0.0
+|TIMEOUT|超时|最低3.0.0
 
 <br/>
 #### <a name="ioralevalsdkerror"></a> IOralEvalSDK.Error
@@ -251,7 +252,6 @@
 |AudioDevice | 录音设备错误 |最低2.0.0
 |Unknown_word | 所有评测的单词都不在词汇表中|最低2.0.0
 |Server |服务器错误。 遇到次错误联系云知声 |最低2.0.0
-|Offline |离线引擎错误。具体错误类型在另外的[IOralEvalSDK.OfflineSDKPreparationError](#ioralevalsdkofflinesdkpreparationerror)类型的参数中 |最低2.0.0
 
 <br/>
 #### <a name="ioralevalsdkicallback"></a> IOralEvalSDK.ICallback
@@ -271,7 +271,7 @@
 |参数 audioRecorderSessionId|从麦克风录音评测时，启动的AudioRecord实例的AudioSessionId，对应AudioRecord.getAudioSessionId()方法的返回值。如果无法正常取得AudioSessionId，则为-1|
 
 <br/>
-* public void onError([IOralEvalSDK](#ioralevalsdk) who, [Error](#ioralevalsdkerror) error, [OfflineSDKPreparationError](#ioralevalsdkofflinesdkpreparationerror) offlineError)
+* public void onError([IOralEvalSDK](#ioralevalsdk) who, [SDKError](#ioralevalsdkerror) error, [OfflineSDKError](#ioralevalsdkofflinesdkpreparationerror) offlineError)
 
 | | |
 | ----- | ----- |
@@ -282,7 +282,7 @@
 |参数 offlineError| 离线评测错误的原因值 |
 
 <br/>
-* public void onStop([IOralEvalSDK](#ioralevalsdk) who, String result, boolean isOffline, String url, int stopType)
+* public void onStop([IOralEvalSDK](#ioralevalsdk) who, String result, boolean isOffline, String url, EndReason stopType)
 
 | | |
 | ----- | ----- |
@@ -292,7 +292,7 @@
 |参数 result| 在线评测错误的原因值|
 |参数 isOffline| 结果是否为离线评测的结果 |
 |参数 url| 在线评测的录音url地址。如果本次是离线结果，即isOffline为true，则此url无效 |
-|参数 stopType| 结束评测的原因。0是调用[IOralEvalSDK](#ioralevalsdk).stop()结束，1是VAD检测到完成说话结束，2是VAD检测到长时间没有人说话结束|
+|参数 stopType| 结束评测的原因。UserAction是调用[IOralEvalSDK](#ioralevalsdk).stop()结束，VoiceEnd是VAD检测到完成说话结束，NoVoice是VAD检测到长时间没有人说话结束,InputStreamEnd是当使用非mic音频源评测时，音频流结束或读取失败|
 
 <br/>
 * public void onVolume([IOralEvalSDK](#ioralevalsdk) who, int value)
