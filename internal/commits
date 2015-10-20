@@ -3,3 +3,4 @@ a63c46a1030fec4c7de058740c5662a07dd7ca21 android    3.0.0  n      y       y     
 e618144cf1496182b999052d4735401b9b84557b android    0.0.1  y      n       n     http评测时使用随机ip
 36006553c8ca6dbd83b16a0ecb22244232025f93 android    0.0.1  y      n       n     java层分配的空间不够导致jni中crash
 788c85afc0436bc22efdb9e81888928d761cccda android    0.0.1  y      n       n     直接使用第二步(ip + 80)开始在线评测时，不能对http评测错误正常结束
+3ab2ebda4354a4a693e7dffc52b6774dc9b33a10 andorid    0.0.1  y      n       n     备份机制发挥作用时，不能区分是第一步错误还是第二部错误，导致不能正常结束
