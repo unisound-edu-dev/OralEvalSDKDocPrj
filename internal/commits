@@ -7,3 +7,4 @@ e618144cf1496182b999052d4735401b9b84557b android    0.0.1  y      n       n     
 d26353bab3201984e80bd6b6f19573fb198115a2 android    0.1.0  y      y       n     检测禁止录音时读取的的音频都为0问题；结束评测之前读走所有的音频数据
 ff564710c386c28ed4969c0f208277ec16ef43a8 android    0.0.1  y      n       n     更新到正确的版本号
 b0e941966ac96adfc5c7d5ac6d94c1072431771d android    0.0.1  y      n       n     极限条件下stop时sdk内部已经停止导致crash的bug
+3bb036867e57d6f9565df226c4a4fadd542b18de android    0.1.0  y      n       n     同样的音频，每次评测opus编码出来的数据不一样的问题
