@@ -10,3 +10,4 @@ b0e941966ac96adfc5c7d5ac6d94c1072431771d android    0.0.1  y      n       n     
 3bb036867e57d6f9565df226c4a4fadd542b18de android    0.1.0  y      n       n     同样的音频，每次评测opus编码出来的数据不一样的问题
 df5966538539438d96dd0ed5297d74b792bf09ac android    0.0.1  n      n       n     提升离线引擎的线程优先级，保证及时处理消息，不至于调度延迟而导致离线结果超时
 7ee460716bcf0f1e98126cc6762bb244e1979b06 android    0.0.1  n      y       n     离在线混合评测时，永久等待离线结果，不做超时处理
+7a76630bebc639088b57aeab57c496986bbbd810 andorid    0.0.1  n      y       n     动态音频处理间隙，避免在性能不同的手机上音频处理不及时
