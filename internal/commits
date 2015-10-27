@@ -17,3 +17,4 @@ df5966538539438d96dd0ed5297d74b792bf09ac android    0.0.1  n      n       n     
 a6dc2a8bbfa4c3ce189232bfd779d0c53fccf433 android    0.0.1  y      n       n     dynamic http result timeout; stop trying servers if "text too long";flush http output stream if voice ended;get mp3 url for http evaluation
 02b7473e44a2fb87550a13b29aac88d69ea28eab android    0.0.1  n      y       n     在评测信息中，增加sdk的版本号
 bae3e9ad4e8875c818b619323eb482c6070f370d android    0.0.1  y      n       n     文本过长时不能正确检测错误码，导致还会尝试备份连接
+4744ee655eca326beec6d07019efed38af3bfead android    0.0.1  y      n       n     发送start失败时出发了连接失败，导致不能正常结束
