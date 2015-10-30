@@ -19,4 +19,4 @@ a6dc2a8bbfa4c3ce189232bfd779d0c53fccf433 android    0.0.1  y      n       n     
 bae3e9ad4e8875c818b619323eb482c6070f370d android    0.0.1  y      n       n     文本过长时不能正确检测错误码，导致还会尝试备份连接
 4744ee655eca326beec6d07019efed38af3bfead android    0.0.1  y      n       n     发送start失败时出发了连接失败，导致不能正常结束
 8b3fe1bcad404294ef50c5d60835a5ac186eef49 android    0.0.1  y      n       n     解决初始化AudioRecoder录音设备失败不能反悔对应错误码的问题
-a5967151f6d3130ea1d8d5a418f73946656b619b android    0.0.1  n      y       n     将错误码-1003改为-1001
+5ff2a069903d7ff9b3d436fb96ea5e8664dbad0e android    0.0.1  n      y       n     将错误码-1003改为-1001
