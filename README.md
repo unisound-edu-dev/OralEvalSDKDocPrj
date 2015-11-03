@@ -15,6 +15,8 @@
  * [功能规格文档](android/features.md)
  * [版本说明文档](android/version.md)
  * [demo](android/demo.md)
+* Javascript SDK
+ * [API文档](javascript/api.md)*  
 * [评测输入输出说明](评测输入输出说明.md)
 
 ## 规范
