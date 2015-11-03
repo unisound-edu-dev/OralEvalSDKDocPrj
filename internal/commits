@@ -20,3 +20,4 @@ bae3e9ad4e8875c818b619323eb482c6070f370d android    0.0.1  y      n       n     
 4744ee655eca326beec6d07019efed38af3bfead android    0.0.1  y      n       n     发送start失败时出发了连接失败，导致不能正常结束
 8b3fe1bcad404294ef50c5d60835a5ac186eef49 android    0.0.1  y      n       n     解决初始化AudioRecoder录音设备失败不能反悔对应错误码的问题
 5ff2a069903d7ff9b3d436fb96ea5e8664dbad0e android    0.0.1  n      y       n     将错误码-1003改为-1001
+6b3b24a27ce3631e71d6b8306a12f31430ec39d1 android    0.0.1  y      n       n     设置了打分系数时，没有正确传递模式到后端服务
