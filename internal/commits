@@ -21,3 +21,4 @@ bae3e9ad4e8875c818b619323eb482c6070f370d android    0.0.1  y      n       n     
 8b3fe1bcad404294ef50c5d60835a5ac186eef49 android    0.0.1  y      n       n     解决初始化AudioRecoder录音设备失败不能反悔对应错误码的问题
 5ff2a069903d7ff9b3d436fb96ea5e8664dbad0e android    0.0.1  n      y       n     将错误码-1003改为-1001
 6b3b24a27ce3631e71d6b8306a12f31430ec39d1 android    0.0.1  y      n       n     设置了打分系数时，没有正确传递模式到后端服务
+f9fa7d456693616617bf1d27e441aacfc33d3d32 android    0.1.0  n      y       n     增加备份恢复功能，以防止流量集中到某一个idc
