@@ -7,7 +7,9 @@ API请参考Flash SDK(向项目经理索取)
 * [回调列表](#callbacks)
 
 ###<a name="dom"></a>DOM集成
-基于Adobe的安全策略，Flash必须有一个可见区域用于展示，客户在集成js sdk时需要定义如下结构的节点用于安防Flash swf
+基于Adobe的安全策略，Flash必须有一个可见区域用于展示，客户在集成js sdk时需要定义如下结构的节点用于安防Flash swf。
+
+由于浏览器环境非常复杂，用户的浏览器、Flash Player版本、广告屏蔽插件等等千差万别，强烈建议客户开发一个独立的Flash检测、安装界面。此界面可以将SDK的Flash层直接置于顶层，避免一些兼容性问题导致的Flash不能被点击。
 
 ```css
 #unisoundJsSDKFlashContainer{
