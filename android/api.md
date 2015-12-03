@@ -77,6 +77,7 @@
 | 说明|指定评测文本，构建一个默认参数对象。默认ServiceType为A，VadEnable为false，ConnectTimeout为100，useOfflineWhenFailedToConnectToServer为false，AudioStream为null|
 |版本支持| 最低2.0.0 |
 |参数 oralText|要评测的文本。文本的具体要求请参考[评测输入输出说明](评测输入输出说明.md)|
+|注意|请不要传递空字符串，否则有可能会抛出IllegalArgumentException异常|
 
 <br/>
 
@@ -132,6 +133,7 @@
 | 说明|设置评测文本|
 |版本支持| 最低2.0.0 |
 |参数 oralText|需要评测的音频对应的文本。文本的具体要求请参考[评测输入输出说明](评测输入输出说明.md)|
+|注意|请不要传递空字符串，否则有可能会抛出IllegalArgumentException异常|
 
 <br/>
 * public void setScoreAdjuest(float scoreAdjuest)
