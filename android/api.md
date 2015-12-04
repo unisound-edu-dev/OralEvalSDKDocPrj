@@ -163,6 +163,15 @@
 |参数 connectTimeout|连接评测服务时的超时时间，单位为毫秒。默认值为1000毫秒|
 
 <br/>
+* public void setVolumeReport(boolean on)
+
+| | |
+| ----- | ----- |
+| 说明|设置SDK是否上报音量，如果应用层不需要实时音量，请关闭上报音量功能，减少不必要的计算消耗|
+|版本支持| 最低3.5.9 |
+|参数 on|true为打开上报，flase关闭上报。默认为true|
+
+<br/>
 * public void setAudioStream(InputStream audioStream)
 
 | | |
