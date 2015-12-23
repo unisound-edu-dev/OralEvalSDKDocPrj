@@ -24,3 +24,4 @@ bae3e9ad4e8875c818b619323eb482c6070f370d android    0.0.1  y      n       n     
 f9fa7d456693616617bf1d27e441aacfc33d3d32 android    0.1.0  n      y       n     增加备份恢复功能，以防止流量集中到某一个idc
 906d5cad1f8bf287f52e41599475e6aad06ff2af android    0.0.1  n      y       n     增加更多的audiorecode初始化等待时间；设置http响应超时时间最小值2s
 67362fa9da537adb758fb728d01d6b03529cecd4 android    0.0.1  n      y       y     增加接口支持应用层设置关闭音量上报
+ce3292b0becd85c2373eecbfc149b119280c48e6 android    0.0.1  y      n       n     对空内容文本，失败以后不走备份连接
