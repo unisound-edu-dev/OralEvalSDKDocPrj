@@ -25,3 +25,4 @@ f9fa7d456693616617bf1d27e441aacfc33d3d32 android    0.1.0  n      y       n     
 906d5cad1f8bf287f52e41599475e6aad06ff2af android    0.0.1  n      y       n     增加更多的audiorecode初始化等待时间；设置http响应超时时间最小值2s
 67362fa9da537adb758fb728d01d6b03529cecd4 android    0.0.1  n      y       y     增加接口支持应用层设置关闭音量上报
 ce3292b0becd85c2373eecbfc149b119280c48e6 android    0.0.1  y      n       n     对空内容文本，失败以后不走备份连接
+6a0fc8a561e5d0479af968827fd85fe6957e70ed android    0.0.1  y      n       n     客户反应一段代码内容易出异常，但逻辑上没有发现问题，且自己无法复现。经项目经理决定先增加保护
