@@ -12,7 +12,7 @@ df5966538539438d96dd0ed5297d74b792bf09ac android    0.0.1  n      n       n     
 7ee460716bcf0f1e98126cc6762bb244e1979b06 android    0.0.1  n      y       n     离在线混合评测时，永久等待离线结果，不做超时处理
 7a76630bebc639088b57aeab57c496986bbbd810 andorid    0.0.1  n      y       n     动态音频处理间隙，避免在性能不同的手机上音频处理不及时
 3a7c3eef7a307026bd34fd47f9b1370a4aa4c7f1 android    0.1.0  y      y       n     解决内部测试问题，包括崩溃、一直不返回结果的；私有协议评测发现oov时放弃后续备份链接
-4e52ab06f26a3c3098621bcbb9af04247831395b android    0.1.-9  y      n       n     一个严重的多线程问题，没有意识到状态迁移用的后台线程异步执行
+4e52ab06f26a3c3098621bcbb9af04247831395b android    0.1.0  y      n       n     一个严重的多线程问题，没有意识到状态迁移用的后台线程异步执行
 7669dc64b72374ff90e2a1e1e913424132e0b85a android    0.0.1  y      n       n     http评测无需结束信号，音频结束时自然会结束。所以应该在运行过程中随时处理http结果
 a6dc2a8bbfa4c3ce189232bfd779d0c53fccf433 android    0.0.1  y      n       n     dynamic http result timeout; stop trying servers if "text too long";flush http output stream if voice ended;get mp3 url for http evaluation
 02b7473e44a2fb87550a13b29aac88d69ea28eab android    0.0.1  n      y       n     在评测信息中，增加sdk的版本号
